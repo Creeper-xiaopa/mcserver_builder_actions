@@ -4,7 +4,7 @@ on:
 
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   build-default-branch:
@@ -22,10 +22,6 @@ jobs:
         with:
           java-version: '21'
           distribution: 'zulu'
-
-      - name: 设置时区
-        run: |
-          sudo timedatectl set-timezone Asia/Shanghai
 
       - name: 克隆 Folia 仓库
         run: |
