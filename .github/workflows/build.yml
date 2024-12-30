@@ -55,7 +55,7 @@ jobs:
 
       - name: 获取 jar 文件名
         id: get_name
-        run: echo "::set-output name=name::$(ls ~/folia/build/libs/ | grep paperclip)"
+        run: echo "::set-output name=name::$(ls ~/folia/build/libs/ | grep bundler)"
 
       - name: 创建 Release
         id: create_release
