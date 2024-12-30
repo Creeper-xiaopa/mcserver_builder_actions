@@ -124,7 +124,7 @@ jobs:
       - name: 构建
         run: |
           cd ~/lumina
-          ./gradlew createMojmapPaperclipJar
+          ./gradlew createReobfBundlerJar
 
       - name: 获取日期
         id: date1
